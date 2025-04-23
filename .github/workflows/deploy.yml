@@ -32,7 +32,7 @@ jobs:
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Build Docker image
-        run: docker build -t yourdockerhubusername/simple-ml-deployment .
+        run: docker build -t nitesh2k14/simple-ml-deployment .
 
       - name: Push Docker image
-        run: docker push yourdockerhubusername/simple-ml-deployment
+        run: docker push nitesh2k14/simple-ml-deployment
